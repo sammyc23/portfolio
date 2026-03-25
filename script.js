@@ -22,3 +22,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
   }
 });
 
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+
