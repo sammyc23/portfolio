@@ -392,5 +392,27 @@ p{
     margin: 10px 0;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
 }
 
