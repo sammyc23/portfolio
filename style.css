@@ -231,6 +231,10 @@ p{
   margin-right: 20px;
 }
 
+.nav-links {
+  display: flex;
+}
+
 .projectCard {
   background: #fff;
   border-radius: 24px;
@@ -366,6 +370,10 @@ p{
   height: 600px;
 }
 
+.menu-icon {
+  display: none;
+}
+
 @media (max-width: 600px) {
 
   body {
@@ -397,17 +405,24 @@ p{
     flex-direction: column;
   }
 
+  /* HIDE old navbar */
+  ul {
+    display: none;
+  }
+
+  /* show hamburger */
   .menu-icon {
     display: block;
     font-size: 28px;
     cursor: pointer;
   }
 
+  /* hide new nav until clicked */
   .nav-links {
     display: none;
     flex-direction: column;
-    text-align: center;
     width: 100%;
+    text-align: center;
   }
 
   .nav-links.active {
