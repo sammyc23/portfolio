@@ -290,6 +290,10 @@ p{
   color: #444;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 #contactForm {
   padding: 60px 20px;
   display: flex;
@@ -410,23 +414,51 @@ p{
     display: none;
   }
 
-  /* show hamburger */
-  .menu-icon {
+  li{
+    display: none;
+  }
+
+   /* show new mobile nav */
+  .mobile-nav {
     display: block;
+  }
+
+  .mobile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .menu-icon {
+    display: block !important;
     font-size: 28px;
     cursor: pointer;
   }
 
-  /* hide new nav until clicked */
-  .nav-links {
+  .mobile-links {
     display: none;
     flex-direction: column;
-    width: 100%;
     text-align: center;
+    background: #FFCDC9;
   }
 
-  .nav-links.active {
+  .mobile-links a {
+    padding: 15px;
+    display: block;
+  }
+
+  .mobile-links.active {
     display: flex;
+  }
+
+  .pdf-viewer {
+    width: 100%;
+    height: 400px;
+  }
+
+  .pdf-frame {
+    padding: 10px;
   }
 
 }
