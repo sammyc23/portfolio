@@ -418,6 +418,11 @@ p{
     display: none;
   }
 
+    /* make sure name stays left */
+  .logo {
+    font-size: 18px;
+  }
+
    /* show new mobile nav */
   .mobile-nav {
     display: block;
