@@ -1,127 +1,90 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Projects</title> <!-- Shows in search bar -->
-        <link rel="stylesheet" href="style.css"> <!--Link to style sheet-->
-        <script src="scripts.js"></script> <!--Link to java script-->
-        <!--Links to font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <nav>
-            <div class="mobile-nav">
-
-                <div class="mobile-top">
-                    <span class="logo audiowide">SAMARA CUNNINGHAM</span>
-                    <span class="menu-icon" onclick="toggleMenu()">☰</span>
-                </div>
-
-                <div class="mobile-links" id="navLinks">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-
-            </div>
-            <ul>
-                <li class="audiowide"><a href="index.html">SAMARA CUNNINGHAM</a></li> <!-- Logo -->
-                <li class ="nav"><a href="contact.html">Contact</a></li> <!-- Contact Page -->
-                <li class ="nav"><a href="projects.html">Projects</a></li> <!-- Projects Page -->
-                <li class ="nav"><a href="about.html">About</a></li> <!-- About Me Page -->
-                <li class ="nav"><a href="index.html">Home</a></li> <!-- Home Page -->
-            </ul>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Me</a>
+            <a href="projects.html" class="nav-link-active">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
         </nav>
 
-        <header>
-            <h1 class="audiowide">PROJECTS</h1> 
-            <div class = "divider"></div> <!-- Decorations -->
-            <h2>Here you will find some projects that I created with each project containing its own case study</h2>
-        </header>
+        <div id="projectTitle">
+            <img src="projectTitle.png">
+        </div>
 
-        <main class="projects">
+            <div class="projects">
+                <div class="projectGrid">
 
-            <div class="projectGrid">
+                    <a href="assistiveTech.html" class="project-link">
+                        <div class="projectCard" id="assistiveTech">
+                            <div class="projectImage">
+                                <img src="AssistiveTech.png">
+                            </div>
 
-                <a href="assistiveTech.html" class="project-link">
-                    <div class="projectCard">
-                        <div class="projectImage">
-                            <img src="AssistiveTech.png" alt="Project preview">
+                            <div class="projectContent">
+                                <h3>Assistive Technology Report</h3>
+                                <p>An overview of Assistive Technology Tools for Disabilities</p>
+                            </div>
                         </div>
+                    </a>
 
-                        <div class="projectContent">
-                            <h3>Assistive Technology Report</h3>
-                            <p>An overview of Assistive Technology Tools for Disabilities</p>
+                    <a href="boeing.html" class="project-link">
+                        <div id="boeing" class="projectCard">
+                            <div class="projectImage">
+                                <img src="boeing.png">
+                            </div>
+
+                            <div class="projectContent">
+                                <h3>Boeing 737 MAX</h3>
+                                <p>A Reflection on a Software Based System Failure</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="boeing.html" class="project-link">
-                    <div class="projectCard">
-                        <div class="projectImage">
-                            <img src="boeing.png" alt="Project preview">
+                    <a href="diaManage.html" class="project-link">
+                        <div class="projectCard" id="diaManage">
+                            <div class="projectImage">
+                                <img src="Diamanage.png">
+                            </div>
+
+                            <div class="projectContent">
+                                <h3>DiaManage</h3>
+                                <p>A collaborative approach to a health app directed at people with diabities.</p>
+                            </div>
                         </div>
+                    </a>
 
-                        <div class="projectContent">
-                            <h3>Boeing 737 MAX</h3>
-                            <p>A Reflection on a Software Based System Failure</p>
+                    <a href="diaManageExpo.html" class="project-link">
+                        <div class="projectCard" id="diaManageExpo">
+                            <div class="projectImage">
+                                <img src="diaManageExpo.png">
+                            </div>
+
+                            <div class="projectContent">
+                                <h3>DiaManage Expo</h3>
+                                <p>Slide deck detailing DiaManages final implementation, marketing and usability study.</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="diaManage.html" class="project-link">
-                    <div class="projectCard">
-                        <div class="projectImage">
-                            <img src="Diamanage.png" alt="Project preview">
+                    <a href="sudoku.html" class="project-link">
+                        <div class="projectCard" id="sudoku">
+                            <div class="projectImage">
+                                <img src="ai.png">
+                            </div>
+
+                            <div class="projectContent">
+                                <h3>Sudoku and Astronouts</h3>
+                                <p>Learning the power of AI through searching and automated planning.</p>
+                            </div>
                         </div>
+                    </a>
 
-                        <div class="projectContent">
-                            <h3>DiaManage</h3>
-                            <p>A collaborative approach to a health app directed at people with diabities.</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="diaManageExpo.html" class="project-link">
-                    <div class="projectCard">
-                        <div class="projectImage">
-                            <img src="diaManageExpo.png" alt="Project preview">
-                        </div>
-
-                        <div class="projectContent">
-                            <h3>DiaManage Expo</h3>
-                            <p>Slide deck detailing DiaManages final implementation, marketing and usability study.</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="sudokuSolver.html" class="project-link">
-                    <div class="projectCard">
-                        <div class="projectImage">
-                            <img src="ai.png" alt="Project preview">
-                        </div>
-
-                        <div class="projectContent">
-                            <h3>Sudoku and Astronouts</h3>
-                            <p>Learning the power of AI through searching and automated planning.</p>
-                        </div>
-                    </div>
-                </a>
-
+                </div>
             </div>
-            <div class="projectGrid">
-
-                
-            </div>
-        </main>
-
-        <footer>
-            <p>© 2026 Samara Cunningham</p>
-        </footer>
     </body>
-
-</html>
+</html> 

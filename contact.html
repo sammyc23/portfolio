@@ -1,64 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contacts</title> <!--Shows in search bar -->
-        <link rel="stylesheet" href="style.css"> <!--Link to style sheet-->
-        <script src="script.js"></script><!--Link to java script-->
-        <!--Links to font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <nav>
-            <div class="mobile-nav">
-
-                <div class="mobile-top">
-                    <span class="logo audiowide">SAMARA CUNNINGHAM</span>
-                    <span class="menu-icon" onclick="toggleMenu()">☰</span>
-                </div>
-
-                <div class="mobile-links" id="navLinks">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-
-            </div>
-            <ul>
-                <li class="audiowide"><a href="index.html">SAMARA CUNNINGHAM</a></li> <!-- Logo -->
-                <li class ="nav"><a href="contact.html">Contact</a></li> <!-- Contact Page -->
-                <li class ="nav"><a href="projects.html">Projects</a></li> <!-- Projects Page -->
-                <li class ="nav"><a href="about.html">About</a></li> <!-- About Me Page -->
-                <li class ="nav"><a href="index.html">Home</a></li> <!-- Home Page -->
-            </ul>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Me</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link-active">Contact</a>
         </nav>
 
-        <header>
-            <h1 class="audiowide">CONTACT</h1> 
-            <div class = "divider"></div> <!-- Decorations -->
-            <h2>If your interested, feel free to contact me!!!</h2>
-        </header>
-        <main id = "contactForm">
-            
-            <form class="contact-form" method="POST" action="https://formspree.io/f/mreevzge">
-                <div class="form-group">
-                    <input class="audiowide" type="email" name="email" placeholder="Your email">
-                </div>
-                <div class="form-group">
-                    <textarea class="audiowide" name="message" placeholder="Test Message"></textarea>
-                </div>
-                <button type="submit" class="audiowide">Send Message</button>
-            </form>
-
-        </main>
-
-        <footer>
-            <p>© 2026 Samara Cunningham</p>
-        </footer>
+        <div id="projectTitle">
+            <img src="contact.png">
+        </div>
+        
+        <form class="contact-form" method="POST" action="https://formspree.io/f/mreevzge">
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your email">
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="audiowide">Send Message</button>
+        </form>
     </body>
-
-</html>
+</html> 

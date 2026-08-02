@@ -1,48 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Projects Diamanage</title><!-- Shows in search bar -->
-        <link rel="stylesheet" href="style.css"> <!--Link to style sheet-->
-        <script src="scripts.js"></script> <!--Link to java script-->
-        <!--Links to font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
     </head>
 
     <body>
-
-        <nav>
-            <div class="mobile-nav">
-
-                <div class="mobile-top">
-                    <span class="logo audiowide">SAMARA CUNNINGHAM</span>
-                    <span class="menu-icon" onclick="toggleMenu()">☰</span>
-                </div>
-
-                <div class="mobile-links" id="navLinks">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-
-            </div>
-            <ul>
-                <li class="audiowide"><a href="index.html">SAMARA CUNNINGHAM</a></li> <!-- Logo -->
-                <li class ="nav"><a href="contact.html">Contact</a></li> <!-- Contact Page -->
-                <li class ="nav"><a href="projects.html">Projects</a></li> <!-- Projects Page -->
-                <li class ="nav"><a href="about.html">About</a></li> <!-- About Me Page -->
-                <li class ="nav"><a href="index.html">Home</a></li> <!-- Home Page -->
-            </ul>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Me</a>
+            <a href="projects.html" class="nav-link-active">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
         </nav>
 
-        <main>
-            <h1 class = "audiowide">DiaManage Stage 1 Report</h1>
-            <p>This report is a year-long and ongoing group project. This intial stage of the project is analysis,
-            design and research. Our app is targeted at diabetic users looking for an easy, comprehensive way to 
-            track their health. This group project is a great display of my team work. </p>
+        <div>
+            <div class="projectHeader">
+                <a class="projectLink" href="projects.html"><img src="arrow.png" class="projectIcon"></a>
+                <h1 class = "brush">DiaManage Stage 1 Report</h1>
+            </div>
+            <div  class="projectsP">
+                <p>This report was a year-long group project conducted within my 3rd year of University. This intial stage of the project is analysis,
+                design and research. Our app is targeted at diabetic users looking for an easy, comprehensive way to
+                track their health. This group project is a great display of my team work. </p>
+            </div>
             <div class="pdf-wrapper">
                 <div class="pdf-frame">
                     <object
@@ -63,13 +43,7 @@
                     </object>
                 </div>
             </div>
-            <button class="audiowide"><a href="projects.html">Go Back!</a></button>
-        </main>
-
-        <footer>
-            <p>© 2026 Samara Cunningham</p>
-        </footer>
-
+            <button class="projectButton"><a href="projects.html">Go Back!</a></button>
+        </div>
     </body>
-
-</html>
+</html> 
